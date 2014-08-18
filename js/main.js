@@ -12,7 +12,7 @@ var map;
 
 $(document).ready(function() {
 	//use the 
-    map = new WebatlasMap('map', {maxZoom: 13, customer: 'WA_JS_V3_Coursework'});
+    map = new WebatlasMap('map', {maxZoom: 14, customer: 'WA_JS_V3_Coursework'});
 	map.removeControl(map.LayerControl)
 
     map.setView(new L.LatLng(63.4410597431246,10.4027997216313),5);
