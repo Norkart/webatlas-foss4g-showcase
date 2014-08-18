@@ -1,6 +1,9 @@
 WEBATLAS – High quality web maps from proprietary to Open Source
 ========================
 
+Demo: http://norkart.github.io/webatlas-foss4g-showcase/ 
+
+
 **Facts:**
 
 -	WEBATLAS is a collection  of geographical related data – collected, analyzed, organized and made available to end users as raw data, web services or customized products.
