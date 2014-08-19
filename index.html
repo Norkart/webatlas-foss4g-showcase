@@ -13,13 +13,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        
 
         <!-- For kart i fullskjerm -->
         <link rel="stylesheet" href="css/fullscreen.css" />
 
         <!-- Leaflet, Norkart edition -->
         <link rel="stylesheet" href="http://tsadm.webatlas.no/sh/3/v/030714/webatlas.css" />
+        <link rel="stylesheet" href="css/L.Control.Sidebar.css">
+
+        <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -30,12 +33,62 @@
 
         <div id="map"></div>
 
+
+        <div id="sidebar">
+<h1 id="webatlas-high-quality-web-maps-from-proprietary-to-open-source">WEBATLAS</h1>
+<h3>High quality web maps from proprietary to Open Source</h3>
+
+<p>Demo: <a href="http://norkart.github.io/webatlas-foss4g-showcase/">http://norkart.github.io/webatlas-foss4g-showcase/</a> </p>
+
+<p><strong>Facts:</strong></p>
+
+<ul>
+<li>WEBATLAS is a collection  of geographical related data – collected, analyzed, organized and made available to end users as raw data, web services or customized products.</li>
+<li>WEBATLAS is developed and maintained by Norkart – Norways leading GIS company established as early as 1961.</li>
+<li>Topographic maps served as WMS or TMS is the backbone of WEBATLAS.</li>
+<li>WEBATLAS established in 2006 – approx 10 mill hits annually.</li>
+<li>2014 – estimated 1.5 billion hits. </li>
+<li>Directory service (1881.no) and property sales(Finn.no) the biggest clients along with several public sector departments. </li>
+<li>Covers Norway with highly detailed and accurate maps – OSM used in the rest of Europe.</li>
+</ul>
+
+<p><strong>Situation 2006 – 2013:</strong></p>
+
+<ul>
+<li>WEBATLAS powered by in-house developed WMS server and TMS.</li>
+<li>All mapdata in Norway subject to fees and taxation based on use – a little nightmare to administrate. </li>
+<li>Rapid growth a challenge to stability and performance. </li>
+</ul>
+
+<p><strong>2013 – 2014:</strong></p>
+
+<ul>
+<li>Norwegian Mapping Authority releases a lot of products. Maps that become freely available includes: <br>
+o   Topographic maps covering scales 1:50000 and up <br>
+o   Road data from Norwegian Public Roads Administration <br>
+o   Nautical charts  <br>
+o   Place names <br>
+o   Administrative borders <br>
+o   DTM</li>
+<li>This made administration easier and cheaper – to the benefit of our clients </li>
+<li>After successful operation on OSM data in Europe the last two years: <br>
+o   Postgis replaced the old WMS – server’s file based system  <br>
+o   Geoserver replaced the old WMS server <br>
+o   Mapproxy replaced the old tile server</li>
+<li>After ½ year in operation, we’ve got rid of most hickups and are faster and more stable than ever. </li>
+</ul>
+
+<p>During the entire period, a separate WMS specially design to handle raster data quickly has been in operation. This one is also largely based on OpenSource. Unfortunately, ortophoto is still subject to heavy fees.  </p>
+
+<p>Please note that the most detailed data such as cadastre, buildings etc is still not free.  </p>
+        </div>
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>');</script>
 
         <!-- hent inn Webatlas.js-biblioteket -->
         <script src="http://tsadm.webatlas.no/sh/3/v/030714/webatlas.js" type="text/javascript"></script>
-
+        <script src="js/vendor/L.Control.Sidebar.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
