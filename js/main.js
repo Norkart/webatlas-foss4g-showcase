@@ -8,11 +8,9 @@
  *
  */
 
-var map;
-
 $(document).ready(function() {
     //use the 
-    map = new WebatlasMap('map', {
+    var map = new WebatlasMap('map', {
         maxZoom: 14,
         customer: 'WA_JS_V3_Coursework'
     });
@@ -23,7 +21,11 @@ $(document).ready(function() {
 	    position: 'left'
 	});
 	map.addControl(sidebar);
+
 	sidebar.show();
+    $(".hide-sidebar").click(function() {
+        sidebar.hide();
+    })
 	
     var norkartIcon = L.icon({
         iconUrl: 'img/norkartIcon.png',
